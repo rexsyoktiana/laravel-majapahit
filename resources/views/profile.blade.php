@@ -18,27 +18,27 @@
 
             <div class="form-group">
                 <label for="">Nama Lengkap</label>
-                <input type="text" name="nama" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->nama }}">
+                <input type="text" name="nama" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->nama??'' }}">
             </div>
 
             <div class="form-group">
                 <label for="">Alamat</label>
-                <input type="text" name="alamat" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->alamat }}">
+                <input type="text" name="alamat" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->alamat??'' }}">
             </div>
 
             <div class="form-group">
                 <label for="">Pekerjaan</label>
-                <input type="text" name="pekerjaan" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->pekerjaan }}">
+                <input type="text" name="pekerjaan" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->pekerjaan??'' }}">
             </div>
 
             <div class="form-group">
                 <label for="">Pendidikan Terakhir</label>
-                <input type="text" name="pendidikan" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->pendidikan_terakhir }}">
+                <input type="text" name="pendidikan" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->pendidikan_terakhir??'' }}">
             </div>
 
             <div class="form-group">
                 <label for="">NO Telpon</label>
-                <input type="text" name="no" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->no_telpon }}">
+                <input type="text" name="no" class="form-control" placeholder="" aria-describedby="helpId" value="{{ $profile->no_telpon??'' }}">
             </div>
             <button type="submit" class="btn btn-primary">Save</button>
         </form>
